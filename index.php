@@ -3,8 +3,7 @@
 <head>
     <title>Houston MetroRail</title>
     
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.subwayMap-0.5.1.js"></script>
@@ -54,6 +53,8 @@
     </style>
 </head>
 <body>
+    <div class="container">
+    <h1>Houston Light Rail System<sub>BETA</sub></h1>
     <div class="subway-map" data-columns="40" data-rows="40" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
                 
         <ul data-color="#FF0000" data-label="North Line" >
@@ -130,7 +131,7 @@
     </div>
     <div id="legend"></div>
     
-
+    </div>
     <script type="text/javascript">
     $(document).ready(function(){
         $(".subway-map").subwayMap({ debug: true });
